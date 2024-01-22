@@ -39,3 +39,7 @@ luac.out
 *.x86_64
 *.hex
 
+AndroidResources/
+Images.xcassets/
+LaunchScreen.storyboardc/
+*.png
