@@ -11,9 +11,9 @@ fractals["sierpinski"] = function(x, y, side, depth)
         local p2 = geometry.midpoint(x, y, x + side / 2, y)
         local p3 = geometry.midpoint(x, y, x, y - (side * math.sqrt(3)) / 2)
         
-        fractals.sierpinski(p1[1], p1[2], side / 2, depth - 1, _table)
-        fractals.sierpinski(p2[1], p2[2], side / 2, depth - 1, _table)
-        fractals.sierpinski(p3[1], p3[2], side / 2, depth - 1, _table)
+        fractals.sierpinski(p1.x, p1.y, side / 2, depth - 1, _table)
+        fractals.sierpinski(p2.x, p2.y, side / 2, depth - 1, _table)
+        fractals.sierpinski(p3.x, p3.y, side / 2, depth - 1, _table)
     end
 end
 

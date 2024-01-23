@@ -1,10 +1,14 @@
 local geometry = {}
 geometry["outline"] = {}
 
-geometry["point"] = function(x, y)
-    local point = {x, y}
+geometry["point"] = function(X, Y)
+    local point = {x = X, y = Y}
 
     return point
+end
+
+geometry["line"] = function(p1, p2)
+    return display.newLine(p1.x, p1.y, p2.x, p2.y)
 end
 
 geometry["midpoint"] = function(x1, y1, x2, y2)
